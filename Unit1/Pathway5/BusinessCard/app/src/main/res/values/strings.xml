@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <string name="full_name">Ratmir</string>
+    <string name="title">Android Developer Extraordinaire</string>
+    <string name="phone_number">+1 (234) 567-890</string>
+    <string name="social_handle">@ratmir</string>
+    <string name="email">ratmir@example.com</string>
+</resources>
