@@ -1,3 +1,18 @@
+/*
+ * Copyright (C) 2023 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.happybirthday
 
 import android.os.Bundle
@@ -34,8 +49,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     GreetingImage(
-                        message = stringResource(R.string.happy_birthday_text),
-                        from = stringResource(R.string.signature_text)
+                        stringResource(R.string.happy_birthday_text),
+                        stringResource(R.string.signature_text)
                     )
                 }
             }
@@ -53,25 +68,27 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
             text = message,
             fontSize = 100.sp,
             lineHeight = 116.sp,
-            textAlign = TextAlign.Center
+            textAlign = TextAlign.Center,
+            modifier = Modifier.padding(top = 16.dp)
         )
         Text(
             text = from,
             fontSize = 36.sp,
             modifier = Modifier
-                .padding(16.dp)
+                .padding(top = 16.dp)
+                .padding(end = 16.dp)
                 .align(alignment = Alignment.End)
+
         )
     }
 }
 
 @Composable
 fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) {
-    val image = painterResource(R.drawable.androidparty)
     Box(modifier) {
         Image(
-            painter = image,
-            contentDescription = stringResource(R.string.happy_birthday_image),
+            painter = painterResource(id = R.drawable.androidparty),
+            contentDescription = null,
             contentScale = ContentScale.Crop,
             alpha = 0.5F
         )
@@ -85,13 +102,13 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = false)
 @Composable
-fun BirthdayCardPreview() {
+private fun BirthdayCardPreview() {
     HappyBirthdayTheme {
         GreetingImage(
-            message = stringResource(R.string.happy_birthday_text),
-            from = stringResource(R.string.signature_text)
+            stringResource(R.string.happy_birthday_text),
+            stringResource(R.string.signature_text)
         )
     }
 }
