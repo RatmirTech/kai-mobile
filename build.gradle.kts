@@ -13,7 +13,7 @@ kotlin {
 
 sourceSets {
     main {
-        kotlin.srcDirs("Unit1/Pathway1", "Unit2/Pathway1", "src/main/kotlin")
+        kotlin.srcDirs("Unit1/Pathway1", "Unit2/Pathway1", "Unit3/Pathway1", "src/main/kotlin")
     }
 }
 
