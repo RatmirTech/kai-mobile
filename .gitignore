@@ -30,3 +30,18 @@ replay_pid*
 build/
 .gradle/
 !gradle/wrapper/gradle-wrapper.jar
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+bin/
+out/
+
+# Android
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
