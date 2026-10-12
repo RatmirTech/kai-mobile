@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">30 Days of Kotlin</string>
+    <string name="day_number">Day %d</string>
+    <string name="expand_button_content_description">Show or hide the details of this tip.</string>
+    <string name="title1">val and var</string>
+    <string name="detail1">Prefer val for values that never change and use var only when you really need to reassign. Immutable code is easier to reason about.</string>
+    <string name="title2">Type inference</string>
+    <string name="detail2">Kotlin infers types from the assigned value, so you can write val name = \"Kai\" instead of repeating the type yourself.</string>
+    <string name="title3">String templates</string>
+    <string name="detail3">Embed variables directly in text with $name or compute expressions with ${a + b}. No more string concatenation.</string>
+    <string name="title4">Null safety</string>
+    <string name="detail4">A type like String? may hold null, while String never can. The compiler forces you to deal with it before it crashes your app.</string>
+    <string name="title5">Safe calls</string>
+    <string name="detail5">Use ?. to call a method only when the receiver is not null. If it is null the whole expression simply evaluates to null.</string>
+    <string name="title6">Elvis operator</string>
+    <string name="detail6">Provide a fallback with ?: , for example val length = text?.length ?: 0. Short and very readable.</string>
+    <string name="title7">when expression</string>
+    <string name="detail7">when replaces long if-else chains, works with ranges and types, and can return a value directly.</string>
+    <string name="title8">Ranges</string>
+    <string name="detail8">Write 1..10 for an inclusive range, 1 until 10 to exclude the end, and step or downTo to control the direction of a loop.</string>
+    <string name="title9">Default arguments</string>
+    <string name="detail9">Give parameters default values to avoid writing many overloads. Callers only pass what they want to change.</string>
+    <string name="title10">Named arguments</string>
+    <string name="detail10">Call functions with names such as createUser(name = \"Kai\", age = 20). The code documents itself and the order stops mattering.</string>
+    <string name="title11">Data classes</string>
+    <string name="detail11">Add data in front of class and Kotlin generates equals, hashCode, toString and copy for you. Perfect for models.</string>
+    <string name="title12">Single-expression functions</string>
+    <string name="detail12">When a function is one expression, drop the braces: fun square(x: Int) = x * x.</string>
+    <string name="title13">Extension functions</string>
+    <string name="detail13">Add new functions to existing classes without inheriting from them, such as fun String.shout() = uppercase() + \"!\".</string>
+    <string name="title14">Lists and maps</string>
+    <string name="detail14">listOf and mapOf create read-only collections. Use mutableListOf and mutableMapOf when you need to change them.</string>
+    <string name="title15">Lambdas</string>
+    <string name="detail15">A lambda is a function you can pass around. The last lambda argument can be written outside the parentheses.</string>
+    <string name="title16">map and filter</string>
+    <string name="detail16">Transform and select items with map and filter instead of manual loops. Chain them to build small pipelines.</string>
+    <string name="title17">forEach and indices</string>
+    <string name="detail17">Use forEach for simple iteration and withIndex or forEachIndexed when you also need the position of every item.</string>
+    <string name="title18">Scope function let</string>
+    <string name="detail18">let runs a block on a non-null object: name?.let { println(it) }. It is a neat way to unwrap nullable values.</string>
+    <string name="title19">Scope function apply</string>
+    <string name="detail19">apply configures an object and returns it, which is ideal for setting several properties right after creating it.</string>
+    <string name="title20">Higher-order functions</string>
+    <string name="detail20">Functions can take other functions as parameters or return them, which lets you build flexible reusable helpers.</string>
+    <string name="title21">Interfaces</string>
+    <string name="detail21">An interface describes what a class can do. A class may implement many interfaces, and interfaces can have default method bodies.</string>
+    <string name="title22">Sealed classes</string>
+    <string name="detail22">A sealed class restricts its subclasses, so when can check every case and the compiler warns you if you forget one.</string>
+    <string name="title23">Objects and companions</string>
+    <string name="detail23">Use object for a singleton and companion object for members that belong to the class rather than to an instance.</string>
+    <string name="title24">Generics</string>
+    <string name="detail24">Generics let one class or function work with many types safely, like List&lt;T> works for strings, numbers or your own models.</string>
+    <string name="title25">Remember and state</string>
+    <string name="detail25">In Compose, remember keeps a value across recompositions and mutableStateOf makes the UI update when the value changes.</string>
+    <string name="title26">Modifiers</string>
+    <string name="detail26">Modifiers decorate and arrange composables. Their order matters: padding before background is not the same as after.</string>
+    <string name="title27">LazyColumn</string>
+    <string name="detail27">LazyColumn only composes the items that are visible on screen, so long lists stay smooth and use little memory.</string>
+    <string name="title28">Material theming</string>
+    <string name="detail28">Define colors, typography and shapes once in your theme and let every Material component follow them consistently.</string>
+    <string name="title29">Animations</string>
+    <string name="detail29">Small animations such as animateContentSize or animateColorAsState explain changes to the user and make the app feel polished.</string>
+    <string name="title30">Keep practicing</string>
+    <string name="detail30">You finished the month. Build small apps, read other people\'s code and keep experimenting. Consistency beats talent.</string>
+</resources>
